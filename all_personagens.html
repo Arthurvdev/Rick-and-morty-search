@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>RICK AND MORTY API TEST</title>
+</head>
+<body onload="all()">
+
+    <h1 class="dev">Desenvolvidor por: ArthurVdev</h1>
+
+    <div class="navbar-conteiner">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+            </ul>
+            <ul>
+                <li><a href="all_personagens.html">TODOS OS PERSONAGENS</a></li>
+            </ul>
+            <ul>
+                <li><a href="">SOBRE</a></li>
+            </ul>
+            <ul>
+                <input id="pesquisa-text" type="text" placeholder="Pesquisar...">
+            </ul>
+            <ul>
+                <button onclick="buscar()" >Buscar</button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-anterior-proximo-conteiner">
+        <div class="btn-anterior-proximo">
+            <button onclick="anterior()">Página anterior</button>
+            <button onclick="proxima()">próxima página</button>
+        </div>
+    </div>
+    <div id="todos-personagens"></div>
+    
+</body>
+<script src="script.js"></script>
+</html>

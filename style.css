@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    --color: #202020;
+    background: linear-gradient(95deg, var(--color) 25%, transparent 25%) -50px 0,
+          linear-gradient(-15deg, var(--color) 25%, transparent 25%) -50px 0,
+          linear-gradient(25deg, transparent 75%, var(--color) 75%) -50px 0,
+          linear-gradient(-45deg, transparent 75%, var(--color) 75%) -50px 0,
+          linear-gradient(-15deg, transparent 75%, var(--color) 75%) -50px 0;
+    background-color: #333333;
+    background-size: 100px 100px;
+}
+
+.dev{
+    position: fixed;
+    color: white;
+    font-size: 15px;
+    left: 0;
+    bottom: 0;
+}
+
+.banner{
+    width: 100%;
+    background-color: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.banner img{
+    width: 50%;
+    height: 50%;
+    border: none;
+    transition: 0.3s;
+}
+
+.banner img:hover{
+    transition: 0.3s;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1a1a1a;
+    z-index: 10;
+}
+
+h1{
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.navbar-conteiner{
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    color: black;
+}
+
+.navbar{
+    background-color: aliceblue;
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.navbar input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.navbar input:focus{
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.navbar button{
+    padding: 10px;
+    border: none;
+    background-color: #7ffc59;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.navbar button:hover{
+    background-color: #55b638;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.7s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    background-color: #7ffc59;
+    transition: 0.3s;
+}
+
+.navbar li{
+    text-decoration: none;
+}
+
+.navbar ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+#todos-personagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.personagem-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.personagem-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.personagem-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: "Chakra Petch", sans-serif;
+    font-style: oblique;
+}
+
+.personagem-card p {
+    font-size: 14px;
+    color: #555;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.btn-anterior-proximo-conteiner{
+   width: 100%;
+   position: relative;
+}
+
+.btn-anterior-proximo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.btn-anterior-proximo-conteiner button{
+    padding: 10px;
+    border: none;
+    background-color: #7ffc59;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 50px ;
+    padding-right: 50px;
+}
+
+.btn-anterior-proximo-conteiner button:hover{
+    background-color: #55b638;
+    
+}
