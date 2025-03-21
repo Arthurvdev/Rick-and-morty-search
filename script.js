@@ -46,13 +46,14 @@ async function all(pagina) {
     });
 }
 
+// Volta para a página anterior
 function anterior() {
     if (pagina > 1) {
         pagina--;
         all(pagina);
     }
 }
-
+// Avança para a próxima página de personagem
 function proxima() {
     if (pagina < 41) {
         pagina++;
